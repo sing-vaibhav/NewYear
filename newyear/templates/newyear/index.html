@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what is Day Today</title>
+    <style>
+        body {
+            color:red;
+            text-align:center;
+        }
+        #a{
+            color:blue;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    {% if Monday %}
+        <h1>Today is Monday.</h1>
+    {% elif Tuesday %}
+        <h1>Today is Tuesday.</h1>
+    {% elif Wednesday %}
+        <h1>Today is Wednesday.</h1>
+    {% elif Thursday %}
+        <h1>Today is Thursday.</h1>
+    {% elif Friday %}
+        <h1>Today is Friday.</h1>
+    {% elif Saturday %}
+        <h1>Today is Saturday.</h1>
+    {% elif Sunday %}
+        <h1>Today is Sunday.</h1>
+    {% else %}
+        <h1 id=a>Hmm, something's not right. I can't determine the day!</h1>
+    {% endif %}
+</body>
+</html>
